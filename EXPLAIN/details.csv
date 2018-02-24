@@ -1,3 +1,7 @@
-SIMPLE LINEAR REGRESSION,Simple linear regression is a prediction when a variable (y) is dependent on a second variable (x) based on the regression equation of a given set of data
-MULTIPLE LINEAR REGRESSION,This explainMultiple linear regression (MLR) is a statistical technique that uses several explanatory variables to predict the outcome of a response variable. The goal of multiple linear regression (MLR) is to model the relationship between the explanatory and response variables.s multiple regression
-REGRESSION,Some other definition
+REGRESSION,"They are used for predicting a real value like salary. If independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values."
+SIMPLE LINEAR REGRESSION,It is a linear regression model where one independent variable is used to predict the value of a dependent variable by finding correlations between data and creating a linear plot that best fits the data.
+MULTIPLE LINEAR REGRESSION,It is a linear regression model where multiple independent variables are used to predict the value of a dependent variable by finding some correlations between the variables.
+POLYNOMIAL REGRESSION,It is a non linear regression model where multiple powers of a single independent variable is used to find some correlations between independent variable and dependent variable.
+SUPPORT VECTOR REGRESSION,"It is a non linear regression model where a line is drawn in between classes of variables which is called hyperplane, this helps in finding relationship between independent and dependent variables."
+DECISION TREE REGRESSION,It is a non linear regression model where a the data is split into many splits called leafs and forms a decision tree based on the condition of formation of leaves to find relation between independent and dependent variables.
+RANDOM FOREST REGRESSION,"It is a non linear regression model where data is split into multiple trees each consisting of number of leaves based on some condition, this collection of trees help in predicting values of dependent variable."
