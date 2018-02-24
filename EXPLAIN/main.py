@@ -1,24 +1,22 @@
-import speech_recognition as sr
+# Importing the libraries
 import pandas as pd
-from gtts import gTTS
+import numpy as np
 import pygame
-def text_aud():
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        text = r.listen(source)
-    try:    
-        return r.recognize_google(text)
-    except:
-        return -1
-def explain(message):
-    myobj = gTTS(text=message, lang='en', slow=False)
-    myobj.save("welcome.mp3")
-    pygame.mixer.init()
-    pygame.mixer.music.load("welcome.mp3")
-    pygame.mixer.music.play()
-topic = str(text_aud())
-topic = topic.upper()
-lists = pd.read_csv('details.csv', header = None)
-for x in range(0,len(lists[0])):
-    if lists[0][x] in topic:
-        explain(lists[1][x])
+import os
+
+# Importing the dataset
+dataset = pd.read_csv('details.csv', header=None)
+headings = dataset.iloc[:, 0].values.tolist()
+explanations = dataset.iloc[:, 1].values
+
+# Abbreviating the headings
+abbr_headings = []
+for x in headings:
+    abbr = ''.join(x)
+    abbr = abbr.split(' ')
+    abbre = "" 
+    for y in abbr:
+        if y != '':
+            abbre += y[0]
+    abbr_headings.append(abbre)
+
