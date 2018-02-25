@@ -5,3 +5,8 @@ POLYNOMIAL REGRESSION,It is a non linear regression model where multiple powers 
 SUPPORT VECTOR REGRESSION,"It is a non linear regression model where a line is drawn in between classes of variables which is called hyperplane, this helps in finding relationship between independent and dependent variables."
 DECISION TREE REGRESSION,It is a non linear regression model where a the data is split into many splits called leafs and forms a decision tree based on the condition of formation of leaves to find relation between independent and dependent variables.
 RANDOM FOREST REGRESSION,"It is a non linear regression model where data is split into multiple trees each consisting of number of leaves based on some condition, this collection of trees help in predicting values of dependent variable."
+CLASSIFICATION,It is used to predict category to which a following set of input data belong to.
+LOGISTIC REGRESSION,Apply sigmoid function to linear regression function produces an S type slope and thus helps in classifying the data.
+K NEAREST NEIGHBORS,If two categories are present in the dataset and a new data point is added to the set the new data point will be part of that set for which the number of k nearest neighbors is the most.
+SUPPORT VECTOR MACHINES,"A new hyperplane with maximum margin is drawn between the two categories, the support vectors are determined using least euclidian distances. Anything to left of this is classified as belonging to the left set or otherwise to the right set."
+KERNEL SUPPORT VECTOR MACHINES,It helps in finding decision boundary in cases where the data is not linearly separable. Kernel SVM applies various kernels to the data which helps the data to be separated into different categories.
